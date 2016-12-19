@@ -1,0 +1,25 @@
+.timer {
+    float: left;
+    padding: 1rem;
+    margin: 0 1rem 1rem 0;
+    background-color: #2ecc71;
+}
+
+.timer.ended {
+    background-color: #e74c3c;
+}
+
+.timer p {
+    font-size: 4em;
+    margin: .25em 0;
+}
+
+.timer div {
+    font-size: .8em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timer a {
+    cursor: pointer;
+}
