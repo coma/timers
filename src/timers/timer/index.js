@@ -5,6 +5,11 @@ import './index.css';
 
 class Timer extends PureComponent {
 
+    static format (time) {
+
+        return numeral(time).format('00:00:00');
+    }
+
     constructor (props) {
 
         super(props);
@@ -57,7 +62,7 @@ class Timer extends PureComponent {
         return (
             <div className={ classNames('timer', {ended})}>
                 <h2>{ name }</h2>
-                <p>{ numeral(time).format('00:00:00') }</p>
+                <p>{ Timer.format(time) }</p>
                 <div>
                     { !ended && running && <a onClick={ () => this.pause() }>pause</a> }
                     { !ended && !running && <a onClick={ () => this.tick() }>resume</a> }

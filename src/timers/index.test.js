@@ -15,7 +15,7 @@ it('should render a list of timers', () => {
         list.push({
             id  : list.length,
             name: faker.name.firstName(),
-            time:faker.random.number({min: 1, max: 100})
+            time: faker.random.number({min: 1, max: 100})
         });
     }
 
